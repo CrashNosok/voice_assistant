@@ -98,18 +98,8 @@ with m as source:
     # в течение 1 секунды слушаем фон, чтобы не путать шум с речью человека
     r.adjust_for_ambient_noise(source)
 
-# speak_engine = pyttsx3.init()
-
-# только если у тебя установлены голоса для синтеза речи
-# voices = speak_engine.getProperty('voices')
-# # женский голос
-# speak_engine.setProperty('voice', voices[0].id)
-# мужской голос
-# speak_engine.setProperty('voice', voices[4].id)
-
-speak('Добрый день')
-# speak('Здравствуйте, Наталья Леонидовна')
-# speak('Пупсик слушает Вас')
+speak('Добрый день, хозяиен')
+speak('Пупсик слушает Вас')
 
 # начинаем слушать микрофон в фоне после приветственных фраз
 stop_listening = r.listen_in_background(m, callback)
