@@ -27,11 +27,11 @@ def speak(what):
     speak_engine = pyttsx3.init()
     voices = speak_engine.getProperty('voices')
     # женский голос
-    speak_engine.setProperty('voice', voices[0].id)
+    # speak_engine.setProperty('voice', voices[0].id)
+    # мужской голос
+    speak_engine.setProperty('voice', voices[4].id)
     speak_engine.say(what)
     speak_engine.runAndWait()
-    # speak_engine.stop()
-    # del speak_engine
     # speak_engine = pyttsx3.init()
     # voices = speak_engine.getProperty('voices')
     # speak_engine.setProperty('voice', voices[4].id)
